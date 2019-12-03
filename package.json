@@ -1,0 +1,32 @@
+{
+    "name": "evmspecforvscode",
+    "displayName": "EVMSpecForVSCode",
+    "description": "Write specifications for EVM bytecode in VS Code.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "spec",
+            "aliases": ["EVM Spec", "spec"],
+            "extensions": [".cvl",".spec"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "spec",
+            "scopeName": "source.spec",
+            "path": "./syntaxes/spec.tmLanguage.json"
+        }, {
+            "language": "solidity",
+            "scopeName": "source.sol",          
+            "path": "./syntaxes/solidity.json",
+            "embeddedLanguages": {
+                "meta.embedded.block.solidity": "solidity"
+              }
+        }]
+    }
+}

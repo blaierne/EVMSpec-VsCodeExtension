@@ -1,4 +1,4 @@
-# evmspecforvscode README
+# EVMSpec-VsCodeExtension README
 
 VS.Code extension for syntax highlighting certora's specification files (.spec, .cvl).
 

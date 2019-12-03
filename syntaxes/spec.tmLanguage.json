@@ -24,7 +24,7 @@
 				"name": "keyword.control.spec",
 				"match": "\\b(rule|invariant|methods)\\b"
 			}, {
-				"name": "keyword.operator.spec",
+				"name": "keyword.other.unit.spec",
 				"match": "\\b(invoke|sinvoke)\\b"
 			}, {
 					"name": "keyword.other.unit.spec",
@@ -46,11 +46,10 @@
 		"declaration-rule": {
             "patterns": [
                 {
-					"begin": "\\b(rule)\\s+([A-Za-z_]\\w*)\\b {",
-					"end": "}",
-                    "beginCaptures": {
+					"match": "\\b(rule)\\s+([A-Za-z_]\\w*)\\b",
+                    "captures": {
                         "1": {
-                            "name": "storage.type.rule.spec"
+                            "name": "declaration.type.rule.spec"
                         },
                         "2": {
                             "name": "entity.name.rule.spec"
@@ -66,7 +65,7 @@
                     "match": "\\b(invariant)\\s+([A-Za-z_]\\w*)\\b",
                     "captures": {
                         "1": {
-                            "name": "storage.type.invariant.spec"
+                            "name": "declaration.type.invariant.spec"
                         },
                         "2": {
                             "name": "entity.name.invariant.spec"
@@ -81,7 +80,7 @@
                     "match": "\\b(methods)\\b",
                     "captures": {
                         "1": {
-                            "name": "storage.type.methods.spec"
+                            "name": "declaration.type.methods.spec"
                         }
                     }
                 }

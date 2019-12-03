@@ -7,21 +7,29 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#declaration-rule"
+		},
+		{
+			"include": "#declaration-invariant"
+		},
+		{
+			"include": "#declaration-methods"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.other.unit.spec",
+				"name": "keyword.control.spec",
 				"match": "\\b(rule|invariant|methods)\\b"
 			}, {
 				"name": "keyword.operator.spec",
 				"match": "\\b(invoke|sinvoke)\\b"
 			}, {
-					"name": "meta.embedded.block.solidity",
-					"begin": "{",
-					"end": "}",
-					"include": "source.solidity"
+					"name": "keyword.other.unit.spec",
+					"match": "\\b(env|msg)\\b"
+
 			}]
 		},
 		"strings": {
@@ -34,7 +42,51 @@
 					"match": "\\\\."
 				}
 			]
-		}
+		},
+		"declaration-rule": {
+            "patterns": [
+                {
+					"begin": "\\b(rule)\\s+([A-Za-z_]\\w*)\\b {",
+					"end": "}",
+                    "beginCaptures": {
+                        "1": {
+                            "name": "storage.type.rule.spec"
+                        },
+                        "2": {
+                            "name": "entity.name.rule.spec"
+                        }
+					},
+					"include": "source.solidity"
+                }
+            ]
+		},
+		"declaration-invariant": {
+            "patterns": [
+                {
+                    "match": "\\b(invariant)\\s+([A-Za-z_]\\w*)\\b",
+                    "captures": {
+                        "1": {
+                            "name": "storage.type.invariant.spec"
+                        },
+                        "2": {
+                            "name": "entity.name.invariant.spec"
+                        }
+                    }
+                }
+            ]
+		},
+		"declaration-methods": {
+            "patterns": [
+                {
+                    "match": "\\b(methods)\\b",
+                    "captures": {
+                        "1": {
+                            "name": "storage.type.methods.spec"
+                        }
+                    }
+                }
+            ]
+        }
 	},
 	"scopeName": "source.spec"
 }

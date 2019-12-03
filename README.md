@@ -2,6 +2,8 @@
 
 VS.Code extension for syntax highlighting certora's specification files (.spec, .cvl).
 
+Requires an extension for solidity to be already installed and enabled; tested with juanblanco.solidity from the marketplace.
+
 Installation: 
 
 Download zip from github, copy the whole EVMSpec-VsCodeExtension folder into:

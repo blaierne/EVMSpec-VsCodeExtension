@@ -15,18 +15,12 @@
             "aliases": ["EVM Spec", "spec"],
             "extensions": [".cvl",".spec"],
             "configuration": "./language-configuration.json"
+ 
         }],
         "grammars": [{
             "language": "spec",
             "scopeName": "source.spec",
-            "path": "./syntaxes/spec.tmLanguage.json"
-        }, {
-            "language": "solidity",
-            "scopeName": "source.sol",          
-            "path": "./syntaxes/solidity.json",
-            "embeddedLanguages": {
-                "meta.embedded.block.solidity": "solidity"
-              }
+            "path": "./syntaxes/spec.tmLanguage.json"       
         }]
     }
 }

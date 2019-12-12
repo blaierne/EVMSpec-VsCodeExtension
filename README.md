@@ -6,7 +6,9 @@ Requires an extension for solidity to be already installed and enabled; tested w
 
 Installation: 
 
-Download zip from github, copy the whole EVMSpec-VsCodeExtension folder into:
+Either
+ - Download zip from github, copy the whole EVMSpec-VsCodeExtension folder into the VS.Code extensions folder, or
+ - clone this repo into that folder (i.e., cd into the folder and run git clone ) (for updating to the current version, just run git pull).
 
  * Windows %USERPROFILE%\.vscode\extensions
  * macOS ~/.vscode/extensions

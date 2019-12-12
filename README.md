@@ -8,8 +8,9 @@ Installation:
 
 Either
  - Download zip from github, copy the whole EVMSpec-VsCodeExtension folder into the VS.Code extensions folder, or
- - clone this repo into that folder (i.e., cd into the folder and run git clone ) (for updating to the current version, just run git pull).
+ - clone this repo into that folder (i.e., cd into the folder and run `git clone https://github.com/FormalContractVerification/EVMSpec-VsCodeExtension.git`) (for updating to the current version, just run `git pull`).
 
+Depending on your operating system, the VS.Code extensions folder should be in one of the following places.
  * Windows %USERPROFILE%\.vscode\extensions
  * macOS ~/.vscode/extensions
  * Linux ~/.vscode/extensions

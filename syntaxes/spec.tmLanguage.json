@@ -27,6 +27,9 @@
 				"name": "keyword.other.unit.spec",
 				"match": "\\b(invoke|sinvoke)\\b"
 			}, {
+				"name": "keyword.other.unit.spec",
+				"match": "\\b(envfree)\\b"
+			}, {
 					"name": "keyword.other.unit.spec",
 					"match": "\\b(env|msg)\\b"
 

@@ -28,11 +28,13 @@
 				"match": "\\b(invoke|sinvoke)\\b"
 			}, {
 				"name": "keyword.other.unit.spec",
+				"match": "\\b(method|calldataarg)\\b"
+			}, {
+				"name": "keyword.other.unit.spec",
 				"match": "\\b(envfree)\\b"
 			}, {
-					"name": "keyword.other.unit.spec",
-					"match": "\\b(env|msg)\\b"
-
+				"name": "keyword.other.unit.spec",
+				"match": "\\b(env|msg)\\b"
 			}]
 		},
 		"strings": {

@@ -2,7 +2,7 @@
 
 VS.Code extension for syntax highlighting certora's specification files (.spec, .cvl).
 
-Requires an extension for solidity to be already installed and enabled; tested with juanblanco.solidity from the marketplace.
+Requires an VS.Code extension for solidity syntax highlighting to be already installed and enabled; tested with juanblanco.solidity from the marketplace.
 
 Installation: 
 

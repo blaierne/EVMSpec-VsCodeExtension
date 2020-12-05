@@ -22,7 +22,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.spec",
-				"match": "\\b(rule|invariant|methods|sub)\\b"
+				"match": "\\b(rule|invariant|methods|ghost|definition|hook|as|summaries)\\b"
 			}, {
 				"name": "keyword.other.unit.spec",
 				"match": "\\b(invoke|sinvoke)\\b"
@@ -34,10 +34,7 @@
 				"match": "\\b(envfree)\\b"
 			}, {
 				"name": "keyword.other.unit.spec",
-				"match": "\\b(forall|exists)\\b"
-			}, {
-				"name": "keyword.other.unit.spec",
-				"match": "\\b(env|msg)\\b"
+				"match": "\\b(env|msg|mathint)\\b"
 			}]
 		},
 		"strings": {

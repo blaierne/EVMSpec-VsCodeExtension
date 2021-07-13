@@ -1,8 +1,9 @@
 {
     "name": "evmspecforvscode",
-    "displayName": "EVMSpecForVSCode",
+    "publisher": "Certora",
+    "displayName": "Certora Verification Language syntax highlighter",
     "description": "Write specifications for EVM bytecode in VS Code.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "engines": {
         "vscode": "^1.40.0"
     },
@@ -22,5 +23,10 @@
             "scopeName": "source.spec",
             "path": "./syntaxes/spec.tmLanguage.json"       
         }]
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Certora/EVMSpec-VsCodeExtension.git"
+    },
+    "icon": "img/logo.png"
 }

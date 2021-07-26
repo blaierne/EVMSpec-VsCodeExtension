@@ -57,6 +57,15 @@
                     "name": "variable.parameter.spec"
                 }]
             }, {
+                "comment": "e.g., using Whitelist as whitelist",
+                "match": "(using)\\s+(\\w+)(\\s+(as)\\s+(\\w+))?",
+                "captures": {
+                    "1": { "name": "keyword.control.spec" },
+                    "2": { "name": "entity.name.interface" },
+                    "4": { "name": "keyword.control.spec" },
+                    "5": { "name": "entity.name.interface" }
+                }
+            }, {
 				"name": "keyword.control.spec",
 				"match": "\\b(rule|invariant|methods|ghost|definition|hook|as|at|summaries|if|else)\\b"
 			}, {

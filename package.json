@@ -3,7 +3,7 @@
     "publisher": "Certora",
     "displayName": "Certora Verification Language syntax highlighter",
     "description": "Write specifications for EVM bytecode in VS Code.",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "engines": {
         "vscode": "^1.40.0"
     },

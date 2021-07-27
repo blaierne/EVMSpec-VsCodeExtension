@@ -121,8 +121,8 @@
 				"name": "constant.character.escape.spec",
 				"match": "\\\\."
 			}, {
-                "comment": "s.t. ${foobar}",
-                "match": "\\${\\w*}",
+                "comment": "s.t. {foobar.selector}",
+                "match": "\\${[^\\}]*\\}",
                 "name": "variable.other.spec"
             }, {
                 "comment": "s.t. $foobar",
